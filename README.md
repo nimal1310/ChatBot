@@ -61,6 +61,8 @@ const ai = new GoogleGenAI({ apiKey: 'your-api-key' });
 npm start
 
 🖼️ Preview
+
+
 ![Chatbot Screenshot1](./ScreenShot1.png)
 ![Chatbot Screenshot2](./ScreenShot2.png)
 
