@@ -18,6 +18,9 @@ This project allows users to send queries and receive real-time generative respo
 
 ## 📁 Project Structure
 
+
+
+
 project-root/
 │
 ├── public/
