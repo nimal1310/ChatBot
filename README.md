@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# 🤖 AI Chatbot with Gemini API
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive and intelligent AI chatbot interface powered by **Google Gemini API**.  
+This project allows users to send queries and receive real-time generative responses in a conversational UI.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🛠️ Tech Stack Used
 
-### `npm start`
+| Technology | Description |
+|------------|-------------|
+| ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) | Frontend UI framework |
+| ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white) | Responsive styling & layout |
+| ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) | Scripting logic |
+| ![Gemini](https://img.shields.io/badge/Google%20GenAI-4285F4?style=for-the-badge&logo=google&logoColor=white) | Gemini 2.0 Generative AI model |
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📁 Project Structure
 
-### `npm test`
+project-root/
+│
+├── public/
+│   └── index.html
+│
+├── src/
+│   ├── components/
+│   │   └── Chatbot.js       # Main chatbot logic and UI
+│   ├── App.css              # Global styling
+│   ├── App.js               # Main app container
+│   └── Chatbot.css          # Chatbot-specific styling
+│
+├── package.json
+└── README.md
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ✨ Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Toggle background style (transparent or dark)
+- Real-time messaging with Gemini API
+- Auto-scroll to latest message
+- Thinking animation for bot typing
+- Input field limit logic
+- Responsive layout for all devices
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## ⚙️ How to Run the Project
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 1. Clone and install dependencies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+git clone https://github.com//chatbot-gemini.git
+cd chatbot-gemini
+npm install
 
-## Learn More
+const ai = new GoogleGenAI({ apiKey: 'your-api-key' });
+npm start
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+🖼️ Preview
+![Chatbot Screenshot](./assets/chat-preview.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+💡 Sample UI Flow
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
++------------------------------------------------------+
+| ChatBot [🔘 Toggle]                                   |
+|------------------------------------------------------|
+| 🧠 Bot: Hello! How can I assist you today?           |
+| 👤 You: Tell me a joke                              |
+| 🧠 Bot: Why did the computer cross the road?        |
+|         To get a byte to eat!                        |
++------------------------------------------------------+
+| [ write your query... ]   [🚀]                        |
++------------------------------------------------------+
 
-### Analyzing the Bundle Size
+🔮 Future Enhancements
+Integrate voice input (Web Speech API)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Save chat history to backend (Node.js / Firebase)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Add document-based retrieval (RAG architecture)
