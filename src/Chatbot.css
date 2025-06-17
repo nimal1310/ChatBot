@@ -1,0 +1,109 @@
+
+.header
+{
+    width: 100%;
+    border-radius: 1rem;
+    margin-top: 5px;
+    justify-content: space-between;
+}
+.modal-chat
+{
+    display: flex;
+    gap: 10px;
+    
+}
+
+.container
+{
+    width: 100%;
+}
+
+
+.modal-chat .modal-text
+{
+    color: white;
+    background-color: rgb(104, 155, 223);
+    padding: 5px;
+    width: 100%;
+    border-radius: 5px;
+    text-wrap: wrap;
+    text-align: justify;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.user-chat
+{
+    display: flex;
+    justify-content: end;
+    margin: 10px;
+   gap: 10px;
+   text-wrap: wrap;
+}
+
+.user-chat .user-text
+{
+text-align: end;
+background-color: rgb(151, 21, 184);
+padding: 5px;
+border-radius: 5px;
+text-wrap: wrap;
+outline: none;
+text-align: justify;
+width: 100%;
+border: none;
+font-size: medium;
+/* font-weight: bold; */
+color: black;
+font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+.footer
+{
+   
+    width: 100%;
+ 
+}
+
+input
+
+{
+ width: 100%;   
+
+ border-radius: 2rem;
+ outline: none;
+ border: 1px solid #ccc;
+ padding: 5px ;
+ font-weight: bold;
+ position: relative;
+ 
+
+}
+
+
+.send-button
+{
+  position: static;
+    /* top: 35%;
+    right: 10px; */
+    /* margin-right: 5px; */
+    margin-left: 10px;
+    background-color: rgb(27, 147, 194);
+    border-radius: 1rem;
+    padding: 5px 10px;
+   
+    border: none;
+
+    
+}
+
+.send-button:hover{
+    background-color: rgb(9, 58, 75);
+}
+
+.send
+{
+    color: white;  
+}
+
