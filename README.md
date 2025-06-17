@@ -53,15 +53,16 @@ project-root/
 ### 1. Clone and install dependencies
 
 
-git clone https://github.com//chatbot-gemini.git
-cd chatbot-gemini
+git clone /https://github.com/nimal1310/ChatBot.git
+cd chatBot
 npm install
 
 const ai = new GoogleGenAI({ apiKey: 'your-api-key' });
 npm start
 
 🖼️ Preview
-![Chatbot Screenshot](./assets/chat-preview.png)
+![Chatbot Screenshot1](./ScreenShot1.png)
+![Chatbot Screenshot2](./ScreenShot2.png)
 
 
 💡 Sample UI Flow
