@@ -5,7 +5,7 @@ import {GoogleGenAI} from '@google/genai'
 
 
   // const API_KEY=process.env.G_API;
-  const ai=new GoogleGenAI({apiKey:'AIzaSyAfZ0zcqyKw0FyjhfpFCOjoTyTwgZeyzMU'});
+  const ai=new GoogleGenAI({apiKey:'api key'});
 
  
 
